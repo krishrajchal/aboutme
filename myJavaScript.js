@@ -22,26 +22,18 @@ function reverse(str){
 	return str.split("").reverse().join("");
 }
 
-var h;
-var j;
-var c;
+function populatePre(url) {
+    var xhr = new XMLHttpRequest();
+    xhr.onload = function () {
+        document.getElementById('contents').textContent = this.responseText;
+    };
+    xhr.open('GET', url);
+    xhr.send();
+}
 
-$.get("index.html", function(response) { 
-    var h = response;
-});
-
-$.get("myJavaScript.js", function(response) { 
-    var j = response;
-});
-$.get("myCSS.css", function(response) { 
-    var c = response;
-});
-
-
-
-document.getElementById("HTMLcode").innerHTML = h;
-document.getElementById("javaScriptCode").innerHTML = j;
-document.getElementById("CSScode").innerHTML = c;
+document.getElementById("HTMLcode").innerHTML = populatePre("https://krishrajchal.github.io/aboutme/index.html");
+document.getElementById("javaScriptCode").innerHTML = populatePre("https://krishrajchal.github.io/aboutme/myJavaScript.js");
+document.getElementById("CSScode").innerHTML = populatePre("https://krishrajchal.github.io/aboutme/myCSS.css");
 
 function changeText(){
 	switch(i){
@@ -70,7 +62,6 @@ function changeText(){
 				document.getElementById("text").innerHTML = "Same...";
 				document.getElementById("heading").innerHTML = "I am disapointed in you.<br>";
 				i++;
-				o++;
 				break;
 			}
 			document.getElementById("text").innerHTML = "Ha ha ha! I tricked you! You thought you would see: <br>" + start + "!!!";
