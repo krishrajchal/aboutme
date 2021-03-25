@@ -22,7 +22,7 @@ function reverse(str){
 	return str.split("").reverse().join("");
 }
 
-document.getElementById("HTMLcode").innerHTML = `<!DOCTYPE html>
+document.getElementById("HTMLcode").innerHTML = ```<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="myCSS.css">
@@ -91,8 +91,8 @@ document.getElementById("HTMLcode").innerHTML = `<!DOCTYPE html>
 		</div>
 		<script src="myJavaScript.js"></script>
 	</body>
-</html>`;
-document.getElementById("javaScriptCode").innerHTML = `document.getElementById("button").onclick = function() {changeText()};
+</html>```;
+document.getElementById("javaScriptCode").innerHTML = ```document.getElementById("button").onclick = function() {changeText()};
 $("#allCode").hide();
 $.backstretch("codePic.png");
 $(document).ready(function(){
@@ -160,8 +160,8 @@ function changeText(){
 			break;
 		
 	}
-}`;
-document.getElementById("CSScode").innerHTML = `paragraph {
+}```;
+document.getElementById("CSScode").innerHTML = ```paragraph {
 	color: #FF5733;
     font-size: 15px;
     font-weight: bold;
@@ -205,7 +205,7 @@ heading1 {
 body{
 	text-align: center;
 	background: url("/img/cream_dust.png") repeat 100 100;
-}`;
+}```;
 
 function changeText(){
 	switch(i){
