@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="myCSS.css">
+		<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.1.18/jquery.backstretch.min.js"></script>
+	</head>
+	<body>
+		<!-- src=https://stackoverflow.com/questions/23758346/how-to-place-the-html-rectangualar-box-at-the-center-of-the-page/23758530#:~:text=6%20Answers&text=position%20absolute%2C%20left%2050%25%20and,the%20middle%20of%20the%20screen.-->
+		<div style="position: absolute; margin-left: 400px; width: 600px; height: 10000px; background: white; border: 0px">
+			<heading1 id="heading">
+			A short description: <br>
+			</heading1>
+			<paragraph id="text">
+					Hi, my name is Krish. I like to code, write,  do math, reading, cooking, and biking. 
+					I do college-level coding. My latest project in coding is a program that copies any files
+					with the extension .cpp and .py. he program then, uploads those files to Github. I usually
+					write in the morning on weekdays except for Friday. I sometimes read at night. I can cook
+					the usual food like pizza, sandwiches, burritos and other yummy foods.I code in C++, C#, 
+					Python, and JavaScript. I also have power to change this text!!!
+			</paragraph>
+			<br></br>
+			<div>
+				<button class="buttons" id="button">
+					See, click me!!!
+				</button>
+			</div>
+			<div>
+				<button class="buttons" id="showCode">
+					And click me too!!!
+				</button>
+			</div>
+			
+			<div id="allCode">
+				<div id="JavaScript">
+				<!-- src = https://websemantics.uk/articles/displaying-code-in-web-pages/ -->
+					<figure>
+						<cap> 
+							This is my JavaScript code <br>
+						</cap>
+						<code id="javaScriptCode" class="code">
+						</code>
+					</figure>
+				</div>
+				
+				<div id="HTML">
+					<figure>
+						<cap> 
+							This is my HTML code <br>
+						</cap>
+						<code id="HTMLcode" class="code">
+						</code>
+					</figure>
+				</div>
+				
+				<div id="CSS">
+					<figure>
+						<cap> 
+							This is my CSS code <br>
+						</cap>
+						<code id="CSScode" class="code">
+						</code>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<script src="myJavaScript.js"></script>
+	</body>
+</html>

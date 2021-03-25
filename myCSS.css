@@ -1,0 +1,45 @@
+paragraph {
+	color: #FF5733;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+cap{
+	color: #581845;
+	font-size: 17;
+	font-weight: bold;
+	font-family: 'Courier New', monospace;
+}
+
+heading1 {
+	color: #FFC300;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Corben', Georgia, Times, serif;
+}
+
+.buttons{
+	border: none;
+	color: #DAF7A6;
+	background-color: #C70039;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.code{
+	font-family: 'Courier New', monospace;
+	text-align: center;
+	font-weight: bold;
+	color: #900C3F;
+}
+
+body{
+	text-align: center;
+	background: url("/img/cream_dust.png") repeat 100 100;
+}
