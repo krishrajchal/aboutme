@@ -40,7 +40,6 @@ function changeText(){
 			if(o == 1){
 				document.getElementById("text").innerHTML = "Reeeeally, you thought AGAIN that I would trick you.";
 				document.getElementById("heading").innerHTML = "Don't do that again. That was predictable.<br>";
-				document.getElementById("mainDiv").style.marginLeft = "30%";
 				i++;
 				o++;
 				break;
@@ -49,7 +48,6 @@ function changeText(){
 			else if(o >= 1){
 				document.getElementById("text").innerHTML = "I am disapointed in you.";
 				document.getElementById("heading").innerHTML = "I am disapointed in you.<br>";
-				document.getElementById("mainDiv").style.marginLeft = "40%";
 				i++;
 				break;
 			}
@@ -64,7 +62,6 @@ function changeText(){
 		case 3:
 			document.getElementById("text").innerHTML = start;
 			document.getElementById("heading").innerHTML = "A short description:<br>";
-			document.getElementById("mainDiv").style.marginLeft = "25%";
 			i = 0;
 			break;
 		

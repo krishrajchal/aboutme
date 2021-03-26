@@ -19,6 +19,17 @@ heading1 {
     font-family: 'Corben', Georgia, Times, serif;
 }
 
+#mainDiv{
+	position: absolute; 
+	margin-left: 25%; 
+	width: auto; 
+	min-width: 700px;
+	max-width: 700px; 
+	height: auto; 
+	background: white; 
+	border: 0px;
+}
+
 .buttons{
 	border: none;
 	color: #DAF7A6;
