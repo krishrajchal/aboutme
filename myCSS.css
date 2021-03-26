@@ -23,7 +23,7 @@ heading1 {
 	border: none;
 	color: #DAF7A6;
 	background-color: #C70039;
-	padding: 15px 32px;
+	padding: 15px 30px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -41,5 +41,4 @@ heading1 {
 
 body{
 	text-align: center;
-	background: url("/img/cream_dust.png") repeat 100 100;
 }
