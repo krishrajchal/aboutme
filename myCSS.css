@@ -20,12 +20,15 @@ heading1 {
 }
 
 #mainDiv{
-	position: absolute; 
-	margin-left: 25%; 
-	width: 700px; 
+	margin: auto;
+	width: 50%; 
 	height: auto; 
 	background: white; 
 	border: 0px;
+}
+
+#container{
+	text-align:center;
 }
 
 .buttons{
@@ -48,6 +51,25 @@ heading1 {
 	color: #900C3F;
 }
 
-body{
+.stuff{
+	flex: 1 1 0px;
+}
+
+.stuff2{
+	flex: 1 1 0px;
+	cursor: pointer;
+	color:blue;
+	text-decoration: underline;
+}
+
+stuff2:hover{
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #555;
+}
+
+#myStuff{
 	text-align: center;
+	font-size: 1.5vw;
+	display: flex;
+	flex-direction: row;
 }

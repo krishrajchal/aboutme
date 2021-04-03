@@ -10,6 +10,15 @@
 	<body>
 		<!-- src=https://stackoverflow.com/questions/23758346/how-to-place-the-html-rectangualar-box-at-the-center-of-the-page/23758530#:~:text=6%20Answers&text=position%20absolute%2C%20left%2050%25%20and,the%20middle%20of%20the%20screen.-->
 		<div id="mainDiv">
+			<h1>
+				<img src="binary.jpg" style="width:100%; height:300px;">
+				<div id="myStuff">
+					<h3 class="stuff"><a href="https://krishrajchal.github.io/THE-MOST-EPIC-WEBSITE/">A project</a></h3>
+					<h3 class="stuff2" id="info">Contact<h3>
+					<a href="https://krishrajchal.github.io/resume/" class="stuff">Resume</a>
+				</div>
+			</h1>
+			<div id="container">
 			<heading1 id="heading">
 			A short description: <br>
 			</heading1>
@@ -198,11 +207,13 @@ And click me too!!!
 							font-weight: bold;
 							font-family: 'Corben', Georgia, Times, serif;
 						}
-						
+
 						#mainDiv{
 							position: absolute; 
 							margin-left: 25%; 
-							width: 700px; 
+							width: auto; 
+							min-width: 700px;
+							max-width: 700px; 
 							height: auto; 
 							background: white; 
 							border: 0px;
@@ -236,6 +247,7 @@ And click me too!!!
 				</div>
 				<heading1>Sorry for the format :(.</heading1>
 			</div>
+		</div>
 		</div>
 		<script src="myJavaScript.js"></script>
 	</body>

@@ -1,5 +1,6 @@
 document.getElementById("button").onclick = function() {changeText()};
 $("#allCode").hide();
+$("#email").hide();
 $.backstretch("codePic.png");
 $(document).ready(function(){
 	$("#showCode").click(function(){
@@ -18,6 +19,16 @@ function t2b(str) {
     }).join(' ');
 }
 
+email = document.getElementById("info");
+
+email.addEventListener("click", function (){
+	if(email.innerHTML == "Contact"){
+		email.innerHTML = "krishrajchal@gmail.com";
+	}
+	else{
+		email.innerHTML = "Contact";
+	}
+})
 function reverse(str){
 	return str.split("").reverse().join("");
 }
@@ -46,7 +57,7 @@ function changeText(){
 			}
 			
 			else if(o >= 1){
-				document.getElementById("text").innerHTML = "I am disapointed in you.";
+				document.getElementById("text").innerHTML = "I am disapointed in you (I mean that in a funny way).";
 				document.getElementById("heading").innerHTML = "I am disapointed in you.<br>";
 				i++;
 				break;
