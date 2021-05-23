@@ -24,6 +24,7 @@ heading1 {
 	width: 50%; 
 	height: auto; 
 	background: white; 
+	padding: 1%;
 	border: 0px;
 }
 
@@ -68,8 +69,8 @@ stuff2:hover{
 }
 
 #myStuff{
-	text-align: center;
-	font-size: 1.5vw;
+	text-align: middle;
+	font-size: 25px;
 	display: flex;
 	flex-direction: row;
 }
