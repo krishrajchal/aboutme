@@ -5,10 +5,20 @@ paragraph {
     font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
-cap{
+pre {
+  overflow: auto;
+}
+pre > code {
+  display: block;
+  padding: 1rem;
+  word-wrap: normal;
+}
+
+figcaption{
 	color: #581845;
 	font-size: 17;
 	font-weight: bold;
+	text-align:center;
 	font-family: 'Courier New', monospace;
 }
 
@@ -48,6 +58,7 @@ heading1 {
 .code{
 	font-family: 'Courier New', monospace;
 	text-align: center;
+	display: block;
 	font-weight: bold;
 	color: #900C3F;
 }

@@ -19,11 +19,23 @@ function t2b(str) {
     }).join(' ');
 }
 
+function triggerColor(ele){
+	if(localStorage.getItem("color") == null){
+		localStorage.setItem("color", "purple");
+	}
+	else{	
+		ele.style.color = localStorage.getItem("color");
+	}
+}
+
 email = document.getElementById("info");
 
 email.addEventListener("click", function (){
 	if(email.innerHTML == "Contact"){
 		email.innerHTML = "krishrajchal@gmail.com";
+		if(localStorage.col || typeof window.localStorage != "undefined"){
+			triggerColor(email);
+		}
 	}
 	else{
 		email.innerHTML = "Contact";
