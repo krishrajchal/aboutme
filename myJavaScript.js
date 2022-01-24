@@ -2,6 +2,7 @@ document.getElementById("button").onclick = function() {changeText()};
 $("#allCode").hide();
 $("#email").hide();
 $.backstretch("codePic.png");
+
 $(document).ready(function(){
 	$("#showCode").click(function(){
 		$("#allCode").fadeToggle("slow", "linear");
@@ -12,6 +13,7 @@ var i = 0;
 var o = 0;
 var start = document.getElementById("text").innerHTML;
 var code = false;
+var id = null;
 
 function t2b(str) {
     return str.split('').map(function (char) {
@@ -31,14 +33,14 @@ function triggerColor(ele){
 email = document.getElementById("info");
 
 email.addEventListener("click", function (){
-	if(email.innerHTML == "Contact"){
-		email.innerHTML = "krishrajchal@gmail.com";
-		if(localStorage.col || typeof window.localStorage != "undefined"){
+	if(email.innerHTML == "<strong>Contact</strong>"){
+		email.innerHTML = "<strong>krishrajchal@gmail.com</strong>";
+		if(localStorage.color){
 			triggerColor(email);
 		}
 	}
 	else{
-		email.innerHTML = "Contact";
+		email.innerHTML = "<strong>Contact</strong>";
 	}
 })
 function reverse(str){

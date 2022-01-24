@@ -1,37 +1,26 @@
-paragraph {
+para {
 	color: #FF5733;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: bold;
     font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
-
-pre {
-  overflow: auto;
-}
-pre > code {
-  display: block;
-  padding: 1rem;
-  word-wrap: normal;
-}
-
-figcaption{
-	color: #581845;
-	font-size: 17;
-	font-weight: bold;
-	text-align:center;
-	font-family: 'Courier New', monospace;
-}
-
-heading1 {
+title1 {
 	color: #FFC300;
-    font-size: 20px;
+    font-size: 2em;
     font-weight: bold;
     font-family: 'Corben', Georgia, Times, serif;
 }
 
+#code{
+	display:block;
+	padding: 0 0 0 0;
+	text-align: left;
+}
+
+
 #mainDiv{
 	margin: auto;
-	width: 50%; 
+	width: 90%; 
 	height: auto; 
 	background: white; 
 	padding: 1%;
@@ -55,31 +44,37 @@ heading1 {
 	cursor: pointer;
 }
 
-.code{
-	font-family: 'Courier New', monospace;
-	text-align: center;
-	display: block;
-	font-weight: bold;
-	color: #900C3F;
-}
-
-.stuff{
+.projects{
 	flex: 1 1 0px;
 }
 
-.stuff2{
+.resume{
+	flex: 1 1 0px;
+	text-align: right;
+}
+
+.contact{
 	flex: 1 1 0px;
 	cursor: pointer;
-	color:blue;
+	color: blue;
+	text-align: center;
 	text-decoration: underline;
+	background-color: white;
+	border: none;
+	font-size: 28px;
+	font-family: "Times New Roman";
 }
 
-stuff2:hover{
+contact:hover{
 	text-decoration: none;
 	text-shadow: 1px 1px 1px #555;
 }
 
-#myStuff{
+.tab{
+	tab-size: 4;
+}
+
+.info{
 	text-align: middle;
 	font-size: 25px;
 	display: flex;
