@@ -6,7 +6,7 @@ $.backstretch("codePic.png");
 fetch("index.html")
 	.then(response => response.text())
 	.then(data => {
-		document.getElementById("htmlCode").innerHTML = data;
+		document.getElementById("htmlCode").innerHTML = escapeHtml(data);
 	})
 
 fetch("mainJS.js")
@@ -62,6 +62,15 @@ email.addEventListener("click", function (){
 		email.innerHTML = "<strong>Contact</strong>";
 	}
 })
+
+function escapeHtml(text) {
+	return text
+		.replace(/&/g, "&")
+		.replace(/</g, "<")
+		.replace(/>/g, ">")
+		.replace(/"/g, """)
+		.replace(/'/g, "'");
+  }
 
 function changeTheme(){
 	if(isDark){
