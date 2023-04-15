@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="myCSS.css">
+		<link rel="stylesheet" href="mainCSS.css">
 		<link rel="stylesheet" href="default.min.css">
 		<script src="highlight.min.js"></script>
 		<script>hljs.highlightAll();</script>
@@ -15,8 +15,7 @@
 	<body>
 		<!-- src=https://stackoverflow.com/questions/23758346/how-to-place-the-html-rectangualar-box-at-the-center-of-the-page/23758530#:~:text=6%20Answers&text=position%20absolute%2C%20left%2050%25%20and,the%20middle%20of%20the%20screen.-->
 		
-		
-		<p style="text-align: center;"><img src="binary.jpg" style="width: 92%; height:500px; "></p>
+		<button onclick="changeTheme();" class="lightDarkMode"><img src="dark-mode.png" class="lightDarkMode"/></button>
 		<div id="mainDiv">
 			
 			<h1>
@@ -44,245 +43,30 @@
 					See, click me!
 				</button>
 				<button class="buttons" id="showCode">
-					Nah, me! I do cooler stuff!
+					Click me! I do cooler stuff!
 				</button>
 			</div>
 			<div id="allCode">
 				<h2>Hyper Text Markup Language "Code"</h2>
 				<pre class="tab">
-					<code id="code" class="language-html">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-	&lt;head&gt;
-		&lt;link rel="stylesheet" href="myCSS.css"&gt;
-		&lt;link rel="stylesheet" href="pritty/styles/default.min.css"&gt;
-		&lt;script src="pritty/highlight.min.js"&gt;&lt;/script&gt;
-		&lt;script&gt;hljs.highlightAll();&lt;/script&gt;
-		&lt;link href="https://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css"&gt;
-		&lt;link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css"&gt;
-		&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
-		&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.1.18/jquery.backstretch.min.js"&gt;&lt;/script&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
-	&lt;!-- src=https://stackoverflow.com/questions/23758346/how-to-place-the-html-rectangualar-box-at-the-center-of-the-page/23758530#:~:text=6%20Answers&amp;text=position%20absolute%2C%20left%2050%25%20and,the%20middle%20of%20the%20screen.--&gt;
-	&lt;p style="text-align: center;"&gt;&lt;img src="binary.jpg" style="width: 92%; height:1%; "&gt;&lt;/p&gt;
+					<code id="htmlCode" class="language-html">
 
-	&lt;div id="mainDiv"&gt;
-		&lt;h1&gt;
-			&lt;div id="myStuff"&gt;
-				&lt;h3 class="stuff"&gt;&lt;a href="https://krishrajchal.github.io/MyGithubProjects/"&gt;Projects&lt;/a&gt;&lt;/h3&gt;
-				&lt;h3 class="stuff2" id="info"&gt;krish.rajchal@gmail.com&lt;h3&gt;
-				&lt;a href="https://krishrajchal.github.io/resume/" class="stuff"&gt;Resume&lt;/a&gt;
-			&lt;/div&gt;
-		&lt;/h1&gt;
-		&lt;div id="container"&gt;
-			&lt;heading1 id="heading"&gt;
-			A short description: &lt;br&gt;
-			&lt;/heading1&gt;
-			&lt;paragraph id="text"&gt;
-					Hi, my name is Krish. I like to code, write,  do math, reading, cooking, and biking. 
-					I do college-level coding. My latest project in coding is a program that copies any files
-					with the extension .cpp and .py. The program then, uploads those files to Github. I usually
-					write in the morning on weekdays except for Friday. I sometimes read at night. I can cook
-					the usual food like pizza, sandwiches, burritos and other yummy foods.I code in C++, C#, 
-					Python, Java, and JavaScript. I also have power to change this text!
-			&lt;/paragraph&gt;
-			&lt;br&gt;&lt;/br&gt;
-			&lt;div&gt;
-				&lt;button class="buttons" id="button"&gt;
-					See, click me!
-				&lt;/button&gt;
-				&lt;button class="buttons" id="showCode"&gt;
-					Nah, me! I do cooler stuff!
-				&lt;/button&gt;
-			&lt;/div&gt;
-
-		&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;script src="myJavaScript.js"&gt;&lt;/script&gt;
-	&lt;/body&gt;
-&lt;/html&gt;
 					</code>
 				</pre>
 				<h2>Cascading Styling Sheet "Code"</h2>
 				<pre class="tab">
-					<code id="code" class="language-css">
-paragraph {
-	color: #FF5733;
-	font-size: 15px;
-	font-weight: bold;
-	font-family: 'Nobile', Helvetica, Arial, sans-serif;
-}
-heading1 {
-	color: #FFC300;
-	font-size: 20px;
-	font-weight: bold;
-	font-family: 'Corben', Georgia, Times, serif;
-}
-
-#code{
-	display:block;
-	text-align: left;
-}
-
-
-#mainDiv{
-	margin: auto;
-	width: 50%; 
-	height: auto; 
-	background: white; 
-	padding: 1%;
-	border: 0px;
-}
-
-#container{
-	text-align:center;
-}
-
-.buttons{
-	border: none;
-	color: #DAF7A6;
-	background-color: #C70039;
-	padding: 15px 30px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-
-.stuff{
-	flex: 1 1 0px;
-}
-
-.stuff2{
-	flex: 1 1 0px;
-	cursor: pointer;
-	color:blue;
-	text-decoration: underline;
-}
-
-.tab{
-	tab-size: 1;
-}
-
-stuff2:hover{
-	text-decoration: none;
-	text-shadow: 1px 1px 1px #555;
-}
-
-#myStuff{
-	text-align: middle;
-	font-size: 25px;
-	display: flex;
-	flex-direction: row;
-}					
+					<code id="cssCode" class="language-css">
 					</code>
 				</pre>
 				<h2>JavaScript Code</h2>
 				<pre class="tab">
-					<code id="code" class="language-javascript">
-document.getElementById("button").onclick = function() {changeText()};
-$("#allCode").hide();
-$("#email").hide();
-$.backstretch("codePic.png");
-
-$(document).ready(function(){
-	$("#showCode").click(function(){
-		$("#allCode").fadeToggle("slow", "linear");
-	});
-});
-
-var i = 0;
-var o = 0;
-var start = document.getElementById("text").innerHTML;
-var code = false;
-var id = null;
-
-function t2b(str) {
-	return str.split('').map(function (char) {
-		return char.charCodeAt(0).toString(2);
-	}).join(' ');
-}
-
-function triggerColor(ele){
-	if(localStorage.getItem("color") == null){
-		localStorage.setItem("color", "purple");
-	}
-	else{	
-		ele.style.color = localStorage.getItem("color");
-	}
-}
-
-email = document.getElementById("info");
-
-email.addEventListener("click", function (){
-	if(email.innerHTML == "&lt;strong&gt;Contact&lt;/strong&gt;"){
-		email.innerHTML = "&lt;strong>krishrajchal@gmail.com&lt;/strong&gt;";
-		if(localStorage.color){
-			triggerColor(email);
-		}
-	}
-	else{
-		email.innerHTML = "&lt;strong&lt;Contact&lt;/strong&gt;";
-	}
-})
-function reverse(str){
-	return str.split("").reverse().join("");
-}
-
-function changeText(){
-	switch(i){
-		case 0:
-			document.getElementById("text").innerHTML = t2b(start+'');
-			document.getElementById("heading").innerHTML = t2b("A short description:") + "&lt;br&gt;";
-			i++;
-			break;
-			
-		case 1:
-			document.getElementById("text").innerHTML = reverse(start.toString());
-			document.getElementById("heading").innerHTML = reverse("A short description:") + "&lt;br&gt;";
-			i++;
-			break;
-			
-		case 2:
-			if(o == 1){
-				document.getElementById("text").innerHTML = "Reeeeally, you thought AGAIN that I would trick you.";
-				document.getElementById("heading").innerHTML = "Don't do that again. That was predictable.&lt;br&gt;";
-				i++;
-				o++;
-				break;
-			}
-			
-			else if(o >= 1){
-				document.getElementById("text").innerHTML = "I am disapointed in you (I mean that in a funny way).";
-				document.getElementById("heading").innerHTML = "I am disapointed in you.&lt;br&gt;";
-				i++;
-				break;
-			}
-			document.getElementById("text").innerHTML = "Ha ha ha! I tricked you! You thought you would see: &lt;br&gt;" + start + "!!!";
-			document.getElementById("heading").innerHTML = "Ha ha ha!!!&lt;br&gt;";
-			i++;
-			if(o == 0){
-				o++
-			}
-			break;
-			
-		case 3:
-			document.getElementById("text").innerHTML = start;
-			document.getElementById("heading").innerHTML = "A short description:&lt;br>";
-			i = 0;
-			break;
-		
-	}
-}					
+					<code id="jsCode" class="language-javascript">
 					</code>
 				</pre>
 			</div>
 			</div>
 		</div>
-		<script src="myJavaScript.js"></script>
+		<script src="mainJS.js"></script>
 	</body>
 </html>
 

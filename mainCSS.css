@@ -1,0 +1,107 @@
+:root{
+	--bg-col: #202124;
+	--link-col: blue;
+	--heading-col: white;
+}
+
+para {
+	color: #FF5733;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+title1 {
+	color: #FFC300;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Corben', Georgia, Times, serif;
+}
+
+a{
+	text-decoration: none;
+	font-family: 'Nobile', Helvetica, Arial, sans-serif;
+	color: var(--link-col);
+}
+
+h2{
+	color: var(--heading-col);
+}
+
+#code{
+	display:block;
+	padding: 0 0 0 0;
+	text-align: left;
+}
+
+
+#mainDiv{
+	margin: auto;
+	width: 100%; 
+	transform: translate(0px, 300px);
+	height: 100%; 
+	background: var(--bg-col); 
+	border: 0px;
+}
+
+#container{
+	text-align:center;
+}
+
+.lightDarkMode{
+	display:flex;
+	float:right;
+	background: transparent;
+	width: 75px;
+	height: 75px;
+	border: 0px;
+}
+
+.buttons{
+	border: none;
+	color: #DAF7A6;
+	background-color: #C70039;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.projects{
+	flex: 1 1 0px;
+}
+
+.resume{
+	flex: 1 1 0px;
+	text-align: right;
+}
+
+.contact{
+	flex: 1 1 0px;
+	cursor: pointer;
+	color: var(--link-col);
+	text-align: center;
+	background-color: var(--bg-col);
+	border: none;
+	font-size: 28px;
+	font-family: 'Nobile', Helvetica, Arial, sans-serif
+}
+
+contact:hover{
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #555;
+}
+
+.tab{
+	tab-size: 4;
+}
+
+.info{
+	text-align: middle;
+	font-size: 25px;
+	padding:0px 100px 0px 100px;
+	display: flex;
+	flex-direction: row;
+}
