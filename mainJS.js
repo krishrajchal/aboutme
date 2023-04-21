@@ -53,15 +53,25 @@ function t2b(str) {
 }
 
 email = document.getElementById("info");
-
+var showingEmail = false;
 email.addEventListener("click", function (){
-	if(email.innerHTML == "<strong>Contact</strong>"){
-		email.innerHTML = "<strong>krishrajchal@gmail.com</strong>";
+	if(!showingEmail){
+		email.innerHTML = "<a href='altk.xyz' onclick='return false;'><strong>krishrajchal@gmail.com</strong></a>";
+		showingEmail = true;
 	}
 	else{
-		email.innerHTML = "<strong>Contact</strong>";
+		email.innerHTML = "<a href='altk.xyz' onclick='return false;'><strong>Contact</strong></a>";
+		showingEmail = false;
 	}
 })
+
+email.addEventListener('mouseover', function(event) {
+	window.status = 'https://www.google.com';
+  });
+  
+email.addEventListener('mouseleave', function(event) {
+	window.status = '';
+  });
 
 function escapeHtml(text) {
 	return text
